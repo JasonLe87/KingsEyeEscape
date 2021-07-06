@@ -22,7 +22,7 @@ export default function Main( { basketId, basketItem, setBasketID, setBasketItem
   const [pricingCategoryId, setPricingCategoryId] = useState(9)
 
   const [display, setDisplay] = useState()
-  const [style, setStyle] = useState({opacity: 1, display: "block"})
+  const [style, setStyle] = useState({opacity: 1, visibility: "visible"})
 
   function onChange(nextValue) {
     let yourDate = nextValue
@@ -64,9 +64,9 @@ export default function Main( { basketId, basketItem, setBasketID, setBasketItem
 
   function onTapStart() {
     if (display) {
-      setStyle({opacity: 0, display: "none"})
+      setStyle({opacity: 0, visibility: "hidden"})
     } else {
-      setStyle({opacity: 1, display: "block"})
+      setStyle({opacity: 1, visibility: "visible"})
     }
     setDisplay(!display)
   }
