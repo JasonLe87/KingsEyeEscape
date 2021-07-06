@@ -1391,7 +1391,7 @@ button {
   }
 
   .Cover {
-    display: none;
+    display: none!important;
   }
 
   .Continue {

@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { Route, Switch, useLocation, Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 import Bookings from './Bookings.js'
 import Customers from './Customers.js'
 import Calendar from 'react-calendar'
@@ -20,7 +21,8 @@ export default function Main( { basketId, basketItem, setBasketID, setBasketItem
   const [instanceId, setInstanceId] = useState('')
   const [pricingCategoryId, setPricingCategoryId] = useState(9)
 
-  const [total, setTotal] = useState(0)
+  const [display, setDisplay] = useState()
+  const [style, setStyle] = useState({opacity: 1, display: "block"})
 
   function onChange(nextValue) {
     let yourDate = nextValue
@@ -33,7 +35,6 @@ export default function Main( { basketId, basketItem, setBasketID, setBasketItem
   useEffect( ()=> {
     getCalendar()
   }, [bookingDate])
-
 
   function getCalendar() {
     Axios.post(`/schedule`, {params: {start_date: bookingDate, end_date: bookingDate, "item_ids[0]": 1, "item_ids[1]": 2, "item_ids[2]": 3}, headers: headers})
@@ -61,10 +62,19 @@ export default function Main( { basketId, basketItem, setBasketID, setBasketItem
       .catch(err => console.log(err))
   }
 
+  function onTapStart() {
+    if (display) {
+      setStyle({opacity: 0, display: "none"})
+    } else {
+      setStyle({opacity: 1, display: "block"})
+    }
+    setDisplay(!display)
+  }
+
   const location = useLocation()
 
   return (
-    <div className="FlexColumnCenter Booking">
+    <motion.div onTapStart={onTapStart} className="FlexColumnCenter Booking">
       <Switch location={location} key={location.pathname}>
         <Route path="/book_now/basket">
         </Route>
@@ -78,14 +88,14 @@ export default function Main( { basketId, basketItem, setBasketID, setBasketItem
             />
           </div>
           <Bookings data={data} setInstanceId={(id) => setInstanceId(id)} setModal={setModal} createBasket={createBasket}/>
-          <div className="Cover" />
+          <motion.div animate={style} className="Cover" />
           <Link to="/resova">
-            <button className="Continue">Begin Booking</button>
+            <motion.button animate={style} className="Continue">Begin Booking</motion.button>
           </Link>
         </Route>
 
       </Switch>
       <div className="TermsConditions"></div>
-    </div>
+    </motion.div>
   )
 }
