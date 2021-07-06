@@ -31,11 +31,7 @@ export default function Main( { basketId, basketItem, setBasketID, setBasketItem
   }
 
   useEffect( ()=> {
-    Axios.get(`https://api.resova.us/v1/availability/calendar`, {params: {start_date: bookingDate, end_date: bookingDate, "item_ids[0]": 1, "item_ids[1]": 2, "item_ids[2]": 3}, headers: headers})
-      .then(res => {
-        setData(res['data']['data'][bookingDate]['items'])
-      })
-      .catch((err) => console.log(err))
+    getCalendar()
   }, [bookingDate])
 
 
