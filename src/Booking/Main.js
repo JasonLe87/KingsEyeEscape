@@ -38,7 +38,7 @@ export default function Main( { basketId, basketItem, setBasketID, setBasketItem
   function getCalendar() {
     Axios.post(`/schedule`, {params: {start_date: bookingDate, end_date: bookingDate, "item_ids[0]": 1, "item_ids[1]": 2, "item_ids[2]": 3}, headers: headers})
     .then(res => {
-      setData(res['data']['data'][bookingDate]['items'])
+      setData(res['data'][bookingDate]['items'])
     })
     .catch((err) => console.log(err))
   }
@@ -80,7 +80,7 @@ export default function Main( { basketId, basketItem, setBasketID, setBasketItem
           <Bookings data={data} setInstanceId={(id) => setInstanceId(id)} setModal={setModal} createBasket={createBasket}/>
           <div className="Cover" />
           <Link to="/resova">
-            <button className="Continue" >Begin Booking</button>
+            <button className="Continue">Begin Booking</button>
           </Link>
         </Route>
 

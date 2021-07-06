@@ -3,16 +3,16 @@ const path = require('path');
 const Axios = require('axios')
 const fs = require('fs')
 const seo = require('./seo')
-// const bodyparser = require('body-parser')
+const bodyparser = require('body-parser')
 
-// const morgan = require('morgan')
+const morgan = require('morgan')
 
 const app = express();
 const port = 3030;
 
-// app.use(morgan('dev'))
-// app.use(bodyparser.json())
-// app.use(bodyparser.urlencoded({ extended: true }))
+app.use(morgan('dev'))
+app.use(bodyparser.json())
+app.use(bodyparser.urlencoded({ extended: true }))
 
 app.use(express.json());
 
@@ -33,9 +33,9 @@ app.get("*", (req, res) => {
 })
 
 app.post('/schedule', (req, res) => {
-  Axios.post(`https://api.resova.us/v1/availability/calendar`, req.body)
-    .then(result => res.status(200).send(result.data))
-    .catch(err => res.status(200).send(err))
+  Axios.get(`https://api.resova.us/v1/availability/calendar`, req.body)
+    .then(result => res.status(200).send(result['data']['data']))
+    .catch(err => console.log(err))
 })
 
 
