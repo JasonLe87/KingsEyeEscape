@@ -750,7 +750,7 @@ a {
 
 .Continue {
   position: absolute;
-  bottom: 2%;
+  bottom: 0%;
   left: 10%;
   width: 80%;
   height: 8%;
@@ -763,7 +763,7 @@ a {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 12%;
+  height: 8%;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-top: solid #11998e;
