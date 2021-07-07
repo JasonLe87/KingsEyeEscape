@@ -9,29 +9,22 @@ export default function Yelp() {
 
   function spinRight () {
     if (curr < 0) {
-      setCurr(curr + 100.5)
+      setCurr(curr + 100)
     }
     console.log(window.innerWidth)
   }
 
   function spinLeft () {
-    if (curr > -703.5) {
-      setCurr(curr - 100.5)
+    if (curr > -300) {
+      setCurr(curr - 100)
     }
     console.log(window.innerWidth)
   }
 
-  useEffect(() => {
-    const script = document.createElement("script")
-    const fjs = document.getElementsByTagName("script")[0]
-    script.src = "https://www.yelp.com/embed/widgets.js"
-    script.async = true
-    fjs.parentNode.insertBefore(script, fjs)
-  }, [])
-
   return (
     <AnimatePresence>
       <div className="YelpFrame">
+        <h2>Check Out Why People LOVE Us</h2>
         <motion.div className="YelpMain"
           animate={{
             x: curr+"vw"
@@ -43,8 +36,19 @@ export default function Yelp() {
           >
           {YelpReviews.map((res, index) => {
             return (
-              <span id={index} className="yelp-review" data-review-id={res.id} data-hostname="www.yelp.com">Read <a href={res.userid} rel="nofollow noopener">Jennifer K.</a>'s <a href={res.hrid} rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/yI01WKRrv0YFsNmosnfL2Q" rel="nofollow noopener">King's Eye Escape</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a></span>
-              )
+              <div className="Yelp">
+                <div className="YelpImgFrame">
+                  <img src={index + ".jpeg"}/>
+                </div>
+                  <h1>{res.name}</h1>
+                <a href="https://m.yelp.com/biz/kings-eye-escape-westminster">
+                  <p>{res.post.slice(0, 450) + "..."}</p>
+                </a>
+                <a href="https://m.yelp.com/biz/kings-eye-escape-westminster">
+                  <img style={{width: "100px", height: "60px"}}src="logo-Yelp.jpg" />
+                </a>
+              </div>
+            )
             })}
         </motion.div>
         <div style={{flexDirection: "row", alignSelf: "center"}}>

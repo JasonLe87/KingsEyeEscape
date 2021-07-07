@@ -69,16 +69,6 @@ export default function Main () {
           <h2 style={{color: "black", textAlign: "center", background: "white", padding: "50px 0 0 0", marginBottom: "0"}}>
           Check Out Why People Love Us
           </h2>
-          <img src={Reviews[reviewsIndex].url} style={{paddingTop: "3rem", width: "150px", height: "150px", borderRadius: "50%"}}/>
-          <h2 >
-            {Reviews[reviewsIndex].name}
-          </h2>
-          <h4 >
-            {Reviews[reviewsIndex].location}
-          </h4>
-          <p >
-            {Reviews[reviewsIndex].body.slice(0,500)+"..."}
-          </p>
           <img src={"YelpBackground2.png"} />
         </motion.div>
       </div>

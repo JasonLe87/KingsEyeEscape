@@ -4,7 +4,7 @@ import { motion, useCycle } from 'framer-motion'
 
 export default function Booking(props) {
   const ImageLink = ["TheXtraction.jpeg", "TheHarvest.jpeg", "AxeLounge.jpg"]
-  const Title = ["The X-Traction", "The Harvest", "Axethrowing Lounge"]
+  const Title = ["The X-Traction", "The Harvest", "Axe Throwing Lounge"]
 
 
   return (

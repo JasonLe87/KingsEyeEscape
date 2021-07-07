@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 export default function Availability (props) {
 
@@ -21,7 +22,9 @@ export default function Availability (props) {
           opacity: 0,
         }}
       >
-        {props.res.start_time_alt}
+        <Link to="/resova">
+          {props.res.start_time_alt}
+        </Link>
       </motion.div>
   )
 }

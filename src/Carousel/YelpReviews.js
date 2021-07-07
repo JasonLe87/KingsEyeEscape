@@ -1,131 +1,27 @@
 const Reviews = [
-{ id: "UWJITx3T17gTL7u1FZUiQA",
-userid:  "https://www.yelp.com/user_details?userid=rcOIUxsMBBdFLF6aT20BqA",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=UWJITx3T17gTL7u1FZUiQA"
+{ name: "Jennifer K",
+  post:  "We had SO much fun! I picked King's Eye Escape because it had both an axe/knife throwing lounge AND an escape room (my husband and I had never done either) The axe throwing was the deciding factor amongst other escape room businesses. It was my husband's birthday (he hates doing stuff for his birthday by the way) and he said it was THE BEST birthday! The owners are very nice and great hosts. They were even amazing enough to encourage checking out other escape room businesses. They had the other business' hand-outs and gave them to us. We'll definitely be coming back when the new escape room is open and HOPEFULLY we'll be able to finish the one we weren't able to!",
 },
-{ id: "EzVQ1DsaFWHukySnkyUhGQ",
-userid:  "https://www.yelp.com/user_details?userid=bKY1TLlA8NZHAF8zXHMN5g",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=EzVQ1DsaFWHukySnkyUhGQ"
+{ name: "Daniel K",
+  post:  "Epic! It was an amazing experience, my lovely lady surprised me with a date night and took me here to do a back to back axe/knife throwing session and a very well orchestrated escape room! The management and owner was awesome, very welcoming and you can see the passion they put in to this business! Definitely coming back to hone the skills they taught us and also bring my employees here for an amazing way of developing problem solving skills and team work. Highly recommend for both a fun and engaging date or a great way of building team work!"
 },
-{ id: "xaBy8N2j9KM6Dz51eNAkBA",
-userid:  "https://www.yelp.com/user_details?userid=uicpelFLbtbXy8gmXYBAxA",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=xaBy8N2j9KM6Dz51eNAkBA"
+{ name: "Rex W",
+  post:  "I came here this weekend with a group of friends and I didn't know what to expect because I've never been to an escape room before. We were greeted by Marc who was extremely welcoming and friendly! The puzzles were well thought out and challenging and we all had a great time. We also tried out the axe throwing lounge which was amazing as well. Marc was extremely informative and made sure everyone knew how to properly throw them. Overall it was a great time and if I ever wanted to go to an escape room again I would definitely come back for other challenges!"
 },
-{ id: "jEdU6WF6KECMtisz6dvSqQ",
-userid:  "https://www.yelp.com/user_details?userid=ENgL9AxV7uu-v5EUCpF69Q",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=jEdU6WF6KECMtisz6dvSqQ"
+{ name: "Jen L.",
+  post:  "This was my first escape room and Marc was an amazing facilitator. He explained everything in a very informative and engaging manner. The different rooms each brought a different kind of challenge. Mark also provided thorough guidance in the axe/knife throwing lounge. He helped me land some knives and axes on the target! COVID compliant. A great time with friends! If you're up for a challenge and a great time, I totally recommend!"
 },
-{ id: "R2w1mp4v5NaUDuZCsV_-uA",
-userid:  "https://www.yelp.com/user_details?userid=dTMCkU2_4EataprkUzfwNw",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=R2w1mp4v5NaUDuZCsV_-uA"
+{ name: "Poelene S.",
+  post:  "I just moved to the area and am so happy I found this place on Yelp when I was looking up local escape rooms. My group and I thoroughly enjoyed their Loot Wars: the Harvest Room. We were so close to solving the room, but we still had a lot of fun! It was one of the more challenging rooms I've ever played, so be prepared! The owner was very nice, welcoming and informative! This place also has a section for axe/blade throwing which I thought was pretty unique and cool for an escape room to have. We will definitely be back to play their upcoming rooms!"
 },
-{ id: "xspDuy16mvpi8a4sQjRmow",
-userid:  "https://www.yelp.com/user_details?userid=ZvKiuzJHa2LyiE9pdbyEDQ",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=xspDuy16mvpi8a4sQjRmow"
+{ name: "Tiffany N.",
+  post:  "My boyfriend & I came here to try axe throwing for the first time. Will, the co-founder, was so great with us. He was friendly and patient with us as he taught us the technique behind the axe throwing and knife throwing. He also gave us complimentary waters. Once we got a feel for it, we had the room to ourselves and made a competition out of the activity. We were given 8 axes and 8 knives. It was a fun date night activity for us. I'd recommend the axe and knife throwing here. We'll be back to try out their escape rooms next time. Thanks Will!"
 },
-{ id: "omZLSkJ7J9yB2JwiZ0lHIw",
-userid:  "https://www.yelp.com/user_details?userid=-HTWi5N5Apdjvyuzd4_4VA",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=omZLSkJ7J9yB2JwiZ0lHIw"
+{ name: "Amy R.",
+  post:  "My group of 3 escape room enthusiasts had a blast playing their apocalyptic room!! Our game master Kevin was kind and super helpful when we needed a nudge in the right direction. Our group has played around 100 rooms and definitely enjoyed the room, were challenged, and highly recommend checking them out! New to rooms or an enthusiast, they are definitely a place to check out. Can't wait to do their second room and axe throwing."
 },
-{ id: "31f6cNBHkGAHQJyYSjJ6rw",
-userid:  "https://www.yelp.com/user_details?userid=euw10fAJUNWyKilNkwlc1g",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=31f6cNBHkGAHQJyYSjJ6rw"
-},
-{ id: "yV_S7RuyRZgPg7O36DHOZA",
-userid:  "https://www.yelp.com/user_details?userid=wkFylRMDdfyGxshYPivuWg",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=yV_S7RuyRZgPg7O36DHOZA"
-},
-{ id: "LftHpQ14C4ROIqaUJdQebw",
-userid:  "https://www.yelp.com/user_details?userid=oqGXWdnRZXQ8Oo6BDicq1g",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=LftHpQ14C4ROIqaUJdQebw"
-},
-{ id: "wTAiAg5R2OnxLoCIY20jwQ",
-userid:  "https://www.yelp.com/user_details?userid=fwWF8UsEvAM24ZqEZKKoLg",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=wTAiAg5R2OnxLoCIY20jwQ"
-},
-{ id: "ghgRrMtANnuaIa34UdavQQ",
-userid:  "https://www.yelp.com/user_details?userid=SIexhpwhkpHum02U3bB3IQ",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=ghgRrMtANnuaIa34UdavQQ"
-},
-{ id: "g-LLN3aJUICVS7JnNInvLg",
-userid:  "https://www.yelp.com/user_details?userid=LahNHa28u15ntoHcsiYAGQ",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=g-LLN3aJUICVS7JnNInvLg"
-},
-{ id: "_max1NAHqtifcYhjVn7huA",
-userid:  "https://www.yelp.com/user_details?userid=gTztIRnsNr0dIgnOhrftzQ",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=_max1NAHqtifcYhjVn7huA"
-},
-{ id: "-oqP7YrmmNVL_HzmI9xY6Q",
-userid:  "https://www.yelp.com/user_details?userid=qWRPJFR0_jzSWWLnHiF7dw",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=-oqP7YrmmNVL_HzmI9xY6Q"
-},
-{ id: "SBrEtGqmaOV_ZKUM_D-sqQ",
-userid:  "https://www.yelp.com/user_details?userid=zOtCHSB-eO7yv1oV11s1yA",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=SBrEtGqmaOV_ZKUM_D-sqQ"
-},
-{ id: "4my-Vdmr-spdYAbRpqwOKA",
-userid:  "https://www.yelp.com/user_details?userid=-o9wg1-C5RzEssEBYowjdg",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=4my-Vdmr-spdYAbRpqwOKA"
-},
-{ id: "ydzCkYz-VKnBoU5U0qrm3w",
-userid:  "https://www.yelp.com/user_details?userid=XBWwORpa49QTA47gWTe9Lg",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=ydzCkYz-VKnBoU5U0qrm3w"
-},
-{ id: "FYN4DL4VX_Jn9t3SGCUBQg",
-userid:  "https://www.yelp.com/user_details?userid=vdmNjFdle5584ICyqjPsHw",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=FYN4DL4VX_Jn9t3SGCUBQg"
-},
-{ id: "4Bn7FUBNyt9LvS3VE6Cyjg",
-userid:  "https://www.yelp.com/user_details?userid=O-o4kg_lcln8WYpDHHEpQQ",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=4Bn7FUBNyt9LvS3VE6Cyjg"
-},
-{ id: "5dGTkhUJ4jC9AGk7jx9dCA",
-userid:  "https://www.yelp.com/user_details?userid=xUAipI7oax6295UE6mcL7g",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=5dGTkhUJ4jC9AGk7jx9dCA"
-},
-{ id: "t7wfIgkuR-zsDD2TW9IJeA",
-userid:  "https://www.yelp.com/user_details?userid=vwFRw7TfxP62XZ-08MRX1w",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=t7wfIgkuR-zsDD2TW9IJeA"
-},
-{ id: "pG47wNzrQtUqHLZt7EvN3w",
-userid:  "https://www.yelp.com/user_details?userid=QAMBGjgU448HX4LPl1Hy1Q",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=pG47wNzrQtUqHLZt7EvN3w"
-},
-{ id: "DWIRyav9ZtHUES1lGuPa4g",
-userid:  "https://www.yelp.com/user_details?userid=A-iNtccEeq3n-J5-ovnedw",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=DWIRyav9ZtHUES1lGuPa4g"
-},
-{ id: "4-NA_zfSxY194h6jF67qHQ",
-userid:  "https://www.yelp.com/user_details?userid=wVUfaR-hn-UylxzlP6qg-g",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=4-NA_zfSxY194h6jF67qHQ"
-},
-{ id: "WwTWiB403242ZViacwu9Vg",
-userid:  "https://www.yelp.com/user_details?userid=bHZndGc87N1WHr6FbVlL_g",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=WwTWiB403242ZViacwu9Vg"
-},
-{ id: "AkrMm0_GfNAMM88iiql_AQ",
-userid:  "https://www.yelp.com/user_details?userid=MzJPv41mlLcFk4sUtMV_bw",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=AkrMm0_GfNAMM88iiql_AQ"
-},
-{ id: "_1n65WUzXUKW31pFloMeeg",
-userid:  "https://www.yelp.com/user_details?userid=shiz4bZGGHO5dtAqp1PTjQ",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=_1n65WUzXUKW31pFloMeeg"
-},
-{ id: "Il1iL-XBQM4CYx-xRXNUyg",
-userid:  "https://www.yelp.com/user_details?userid=N6Xfj1KRqNR8FsOa8MH4aw",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=Il1iL-XBQM4CYx-xRXNUyg"
-},
-{ id: "a8V_0VTbGzS1UuSM0QU1_Q",
-userid:  "https://www.yelp.com/user_details?userid=9e85j6pauwARAcsEk-ctjA",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=a8V_0VTbGzS1UuSM0QU1_Q"
-},
-{ id: "_64nHIL-6uRblyQlOyhO3w",
-userid:  "https://www.yelp.com/user_details?userid=kYddxyOJD_vELH6Vr_ytyw",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=_64nHIL-6uRblyQlOyhO3w"
-},
-{ id: "_UsFS3Z5i_LHBmmBJA-ORA",
-userid:  "https://www.yelp.com/user_details?userid=o4WCWv5rJx9RbdXUPFFDjQ",
-hrid: "https://www.yelp.com/biz/kings-eye-escape-westminster?hrid=_UsFS3Z5i_LHBmmBJA-ORA"
+{ name: "Howard C.",
+  post:  "This is proof that you don't need high tech in an escape room to deliver an amazing experience. My gf and I have done about 20 escape rooms and this is by far one of the best rooms we've been to in terms of story and puzzle solving. Coming off of our first loss last week, we were looking to redeem ourselves. The room is doable with two people (we managed to finish with 2 minutes left) but the sheer amount of puzzles made it more appropriate for 4+. We were sweating and out of breath by the end which made the 'looting' feel all the more immersive.  Every detail was very well thought out and all the props were REAL which added to the experience. We can't wait for their next room Xtraction! Add these guys to the list of escape rooms to try in 2021!!"
 }
 ]
 
