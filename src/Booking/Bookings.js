@@ -8,9 +8,11 @@ export default function Bookings(props) {
   return (
     <div className="BookingList">
       {props.data.map((res, index) => {
-        return (
-          <Booking key={index} data={res} pricing={Pricing[index]} setInstanceId={props.setInstanceId} setModal={props.setModal} createBasket={props.createBasket}/>
-        )
+        if(index > 0) {
+          return (
+            <Booking key={index} data={res} pricing={Pricing[index]} setInstanceId={props.setInstanceId} setModal={props.setModal} createBasket={props.createBasket}/>
+          )
+        }
       })}
     </div>
   )

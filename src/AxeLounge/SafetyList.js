@@ -27,7 +27,7 @@ const List = [
     description: "Follow all directions given by our Dungeon Masters and other staff. Should you forget a safety rule, you will receive friendly but firm reminders from them. However, repeated failure to follow safety rules may result in your removal from the throwing area and/or facility. Please take their direction seriously, as all rules are in place for your safety."
   },
   {
-    header: "ROUGHHOUSING & HORSEPLAY",
+    header: "ROUGHHOUSING/HORSEPLAY",
     description: "We ask that all participants behave in a responsible and adult manner. We are here to have fun, but safety must come first. Our staff will issue warnings for any roughhousing or horseplay. Repeated warnings may result in removal from the throwing area and/or the premises."
   },
   {

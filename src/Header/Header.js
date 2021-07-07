@@ -54,6 +54,11 @@ function Header() {
             BOOK NOW
           </Link>
         </motion.div>
+        <motion.div animate={navLink} transition={{type: "spring", delay: .6}} className="navLink">
+          <a href="tel:+1-714-379-5889" >
+            CALL NOW
+          </a>
+        </motion.div>
       </div>
       <div className="moduleRight">
         <div className="navLink">
