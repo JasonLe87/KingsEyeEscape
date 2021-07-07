@@ -28,7 +28,7 @@ export default function AxeLounge() {
         <header>Indoor AXE THROWING Lounge</header>
         <div className="divisor" />
         <p>
-          Here at King's Eye Escape, our love language is difinitely AXe of Service! So come kick back and  relAX in our latest AXperience! Join us today for a fantAXtic time!
+          Here at King's Eye Escape, our love language is definitely AXe of Service! So come kick back and  relAX in our latest AXperience! Join us today for a fantAXtic time!
         </p>
         <div className="AxeRoom">
           <img className="Poster" src="./AxeLounge.jpg" alt="/"/>
