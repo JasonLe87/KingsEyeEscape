@@ -64,7 +64,7 @@ export default function Main( { basketId, basketItem, setBasketID, setBasketItem
 
   function onTapStart() {
     if (display) {
-      setStyle({opacity: 0, visibility: "hidden"})
+      setStyle({opacity: .2})
     } else {
       setStyle({opacity: 1, visibility: "visible"})
     }
