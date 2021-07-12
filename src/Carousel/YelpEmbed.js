@@ -24,7 +24,7 @@ export default function Yelp() {
   return (
     <AnimatePresence>
       <div className="YelpFrame">
-        <h2>Check Out Why People LOVE Us</h2>
+        <h2 style={{textShadow: "2px 2px 2px white"}}>Check Out Why People <a href="https://m.yelp.com/biz/kings-eye-escape-westminster" style={{color:"red", textDecorationColor: "white"}}>LOVE</a> Us</h2>
         <motion.div className="YelpMain"
           animate={{
             x: curr+"vw"
