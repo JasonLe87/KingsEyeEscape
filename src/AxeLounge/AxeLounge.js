@@ -37,7 +37,7 @@ export default function AxeLounge() {
             <div className="Information">
               <div className="Info">
                 <FontAwesomeIcon icon={faCrosshairs} size='1x'style={{ color: 'white'}} />
-                <p>Ages 8+ (adult supervision required)</p>
+                <p>Ages 8+ (supervision required for minors)</p>
               </div>
               <div className="Info">
                 <FontAwesomeIcon icon={faCrosshairs} size='1x'style={{ color: 'white' }} />
