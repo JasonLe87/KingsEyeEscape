@@ -36,19 +36,23 @@ export default function AxeLounge() {
             <p>Enjoy our AXE-tremely personal and AXE-ceptional service in our private indoor lounge! Learn how to throw various weapons safely from our IntellAXEuals! Stop being BOARD and come out and AXually have a good time! You probably won’t mAX out your credit card because that would be unAXEceptable!</p>
             <div className="Information">
               <div className="Info">
-                <FontAwesomeIcon className="players" icon={faCrosshairs} size='1x'style={{ color: 'white'}} />
-                <p>OPEN 10am-midnight</p>
+                <FontAwesomeIcon icon={faCrosshairs} size='1x'style={{ color: 'white'}} />
+                <p>Ages 8+ (adult supervision required)</p>
               </div>
               <div className="Info">
-                <FontAwesomeIcon className="clock" icon={faCrosshairs} size='1x'style={{ color: 'white' }} />
+                <FontAwesomeIcon icon={faCrosshairs} size='1x'style={{ color: 'white' }} />
+                <p>From 2 to 8 players</p>
+              </div>
+              <div className="Info">
+                <FontAwesomeIcon icon={faCrosshairs} size='1x'style={{ color: 'white' }} />
                 <p>$50pp/1hr for 2, $35pp/1hr for 3+ people</p>
               </div>
               <div className="Info">
-                <FontAwesomeIcon className="trophy" icon={faCrosshairs} size='1x'style={{ color: 'white' }} />
+                <FontAwesomeIcon icon={faCrosshairs} size='1x'style={{ color: 'white' }} />
                 <p>Safety training included</p>
               </div>
               <div className="Info">
-                <FontAwesomeIcon className="biohazard" icon={faCrosshairs} size='1x'style={{ color: 'white' }} />
+                <FontAwesomeIcon icon={faCrosshairs} size='1x'style={{ color: 'white' }} />
                 <p>Walk-ins welcome when lanes are available</p>
               </div>
             </div>

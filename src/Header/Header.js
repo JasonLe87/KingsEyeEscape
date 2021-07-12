@@ -35,29 +35,29 @@ function Header() {
       </div>
       <div className="dropDownRight" style={display}>
         <motion.div animate={navLink} transition={{type: "spring", delay: .2}} className="navLink">
+          <a href="tel:+1-714-379-5889" >
+            CALL NOW
+          </a>
+        </motion.div>
+        <motion.div animate={navLink} transition={{type: "spring", delay: .3}} className="navLink">
           <Link to="/escape_rooms" onClick={()=> ToggleDropdown()}>
             ESCAPE ROOMS
           </Link>
         </motion.div>
-        <motion.div animate={navLink} transition={{type: "spring", delay: .3}} className="navLink">
+        <motion.div animate={navLink} transition={{type: "spring", delay: .4}} className="navLink">
           <Link to="/axe_lounge" onClick={()=> ToggleDropdown()}>
             AXE LOUNGE
           </Link>
         </motion.div>
-        <motion.div animate={navLink} transition={{type: "spring", delay: .4}} className="navLink">
+        <motion.div animate={navLink} transition={{type: "spring", delay: .5}} className="navLink">
           <Link to="/directions" onClick={()=> ToggleDropdown()}>
             DIRECTIONS
           </Link>
         </motion.div>
-        <motion.div animate={navLink} transition={{type: "spring", delay: .5}} className="navLink">
+        <motion.div animate={navLink} transition={{type: "spring", delay: .6}} className="navLink">
           <Link to="/book_now" onClick={()=> ToggleDropdown()}>
             BOOK NOW
           </Link>
-        </motion.div>
-        <motion.div animate={navLink} transition={{type: "spring", delay: .6}} className="navLink">
-          <a href="tel:+1-714-379-5889" >
-            CALL NOW
-          </a>
         </motion.div>
       </div>
       <div className="moduleRight">
