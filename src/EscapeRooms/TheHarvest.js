@@ -13,7 +13,7 @@ export default function TheHarvest() {
           <div className="Information">
             <div className="Info">
               <FontAwesomeIcon className="players" icon={faUserFriends} size='1x'style={{ color: 'white', marginBottom: '25px', marginTop: '25px' }} />
-              <p>2 - 6</p>
+              <p>2 - 8 / Recommended: 4-6</p>
             </div>
             <div className="Info">
               <FontAwesomeIcon className="clock" icon={faClock} size='1x'style={{ color: 'white', marginBottom: '25px', marginTop: '25px'  }} />

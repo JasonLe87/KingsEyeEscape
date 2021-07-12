@@ -29,7 +29,7 @@ export default function TheXtraction() {
             </div>
           </div>
           <Link to="/book_now">
-            <div >BOOK NOW</div>
+            <div >COMING SOON</div>
           </Link>
         </div>
       </div>
