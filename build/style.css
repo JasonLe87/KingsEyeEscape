@@ -1158,6 +1158,10 @@ button {
   font-size: 2rem;
 }
 
+#resova-wrapper {
+  overscroll-behavior: contain;
+}
+
 /* Full Screen */
 @media only screen and (min-device-width: 800px) and (min-width: 800px) {
   .Header {
