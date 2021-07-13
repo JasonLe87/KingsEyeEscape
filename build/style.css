@@ -1158,7 +1158,7 @@ button {
 }
 
 #resova-wrapper {
-  overscroll-behavior: contain;
+  overflow-y: hidden;
 }
 
 /* Full Screen */
