@@ -7,6 +7,7 @@ html, body {
   padding: 0px;
   overflow-x: hidden;
   font-family: Poppins, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overscroll-behavior: contain;
 }
 
 
@@ -1155,11 +1156,6 @@ button {
 .YelpFrame h2 {
   align-self: center;
   font-size: 2rem;
-}
-
-#resova-wrapper {
-  overflow-y: hidden;
-  z-index: 2;
 }
 
 /* Full Screen */
