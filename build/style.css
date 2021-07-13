@@ -1077,9 +1077,8 @@ button {
 }
 
 .FlexColumnCenter img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 100vw;
+  height: auto;
 }
 
 .FlexColumnCenter p {
