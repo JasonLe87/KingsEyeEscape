@@ -21,10 +21,21 @@ function Header() {
 
   }
 
+  const dropDropdown = (e) => {
+    if (!togglemenu) {
+      setToggleMenu(true)
+      setTopLine({})
+      setMidLine({})
+      setBotLine({})
+      setNavLink({x:-1000, opacity: 0})
+      setDisplay({display: "none"})
+    }
+  }
+
   return (
     <div className="Header">
       <div className="moduleLeft">
-        <Link to="/">
+        <Link onClick={(e) => dropDropdown()}to="/">
           <img className="logo" src="./Logo.png" alt="/"/>
         </Link>
         <div className="menu" onClick={(e)=> ToggleDropdown(e)}>
