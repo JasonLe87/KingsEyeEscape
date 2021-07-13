@@ -1159,6 +1159,7 @@ button {
 
 #resova-wrapper {
   overflow-y: hidden;
+  z-index: 2;
 }
 
 /* Full Screen */
