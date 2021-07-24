@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 export default function TheXtraction() {
   return (
       <div className="EscapeRoom">
-        <img className="Poster" src="./TheXtraction.jpeg" alt="/"/>
+        <img className="Poster" src="./TheXtraction.jpeg" alt="Loot Wars: Xtraction"/>
         <div className="Description">
           <header>The X-Traction</header>
           <p>A mysterious figure linked to violent uprisings across the nation has captured a member of your Special Ops Unit. Now you must find and safely extract your fellow agent before their villanous plans play out. Will your operation be successful or will you end up in  <strong>The Aftermath?</strong></p>
@@ -29,7 +29,7 @@ export default function TheXtraction() {
             </div>
           </div>
           <Link to="/book_now">
-            <div >COMING SOON</div>
+            <div >BOOK NOW</div>
           </Link>
         </div>
       </div>

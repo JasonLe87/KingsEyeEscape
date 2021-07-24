@@ -11,7 +11,7 @@ export default function Booking(props) {
     <div className="FlexColumnCenter">
       <div className="FlexColumnCenter Box">
         <h3 style={{textAlign: "center", color: "white"}}>{Title[props.data.item_id - 1]}</h3>
-        <img className="Poster" src={ImageLink[props.data.item_id - 1]} alt="/"/>
+        <img className="Poster" src={ImageLink[props.data.item_id - 1]} alt="Escape Room Poster"/>
         <div className="FlexRowWrap">
           {props.data.instances.map((res, index) => {
             if (res.type === "available" && res.in_past === false) {

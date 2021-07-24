@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStopwatch, faMobileAlt, faMapMarkerAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import {  faFacebookF, faInstagram, faYelp } from '@fortawesome/free-brands-svg-icons'
+import { Helmet } from 'react-helmet'
 import GoogleMapModule from './GoogleMapModule.js'
 
 export default function ContactUs() {
@@ -10,6 +11,16 @@ export default function ContactUs() {
   useEffect(() => {
     document.getElementById("root").scrollIntoView();
   }, []);
+
+  // useEffect(() => {
+  //   const script = document.createElement("script");
+  //   script.src = "https://www.googletagmanager.com/gtag/js?id=UA-159548226-1";
+  //   script.async = true;
+  //   window.dataLayer = window.dataLayer || [];
+  //   function gtag(){dataLayer.push(arguments);}
+  //   gtag('js', new Date());
+  //   gtag('config', 'UA-159548226-1');
+  // }, [])
 
   return (
       <motion.div className="ContactPage"
@@ -23,6 +34,10 @@ export default function ContactUs() {
           opacity: 0,
         }}
       >
+      <Helmet>
+        <title>Directions</title>
+        <meta name="description" content="We’re conveniently located 5 mins off the 22 and 405 freeways in Westminster, Socal. Orange County's Premier axe lounge for private groups up to 8 participants" />
+      </Helmet>
         <div className="ContactInfo">
           <h1>
             Come <strong>VISIT</strong> Us!

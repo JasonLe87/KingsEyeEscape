@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { Route, Switch, useLocation, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { Helmet } from 'react-helmet'
 import Bookings from './Bookings.js'
 import Customers from './Customers.js'
 import Calendar from 'react-calendar'
@@ -35,6 +36,16 @@ export default function Main( { basketId, basketItem, setBasketID, setBasketItem
   useEffect( ()=> {
     getCalendar()
   }, [bookingDate])
+
+  // useEffect(() => {
+  //   const script = document.createElement("script");
+  //   script.src = "https://www.googletagmanager.com/gtag/js?id=UA-159548226-1";
+  //   script.async = true;
+  //   window.dataLayer = window.dataLayer || [];
+  //   function gtag(){dataLayer.push(arguments);}
+  //   gtag('js', new Date());
+  //   gtag('config', 'UA-159548226-1');
+  // }, [])
 
   function getCalendar() {
     Axios.post(`/schedule`, {params: {start_date: bookingDate, end_date: bookingDate, "item_ids[0]": 1, "item_ids[1]": 2, "item_ids[2]": 3}, headers: headers})
@@ -75,6 +86,10 @@ export default function Main( { basketId, basketItem, setBasketID, setBasketItem
 
   return (
     <motion.div onTapStart={onTapStart} className="FlexColumnCenter Booking">
+      <Helmet>
+        <title>Schedule</title>
+        <meta name="description" content="Check for availabilities to find the best time that works for you" />
+      </Helmet>
       <Switch location={location} key={location.pathname}>
         <Route path="/book_now/basket">
         </Route>

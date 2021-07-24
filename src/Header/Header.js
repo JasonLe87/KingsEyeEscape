@@ -36,7 +36,7 @@ function Header() {
     <div className="Header">
       <div className="moduleLeft">
         <Link onClick={(e) => dropDropdown()}to="/">
-          <img className="logo" src="./Logo.png" alt="/"/>
+          <img className="logo" src="./Logo.png" alt="King's Eye Logo"/>
         </Link>
         <div className="menu" onClick={(e)=> ToggleDropdown(e)}>
           <motion.div animate={topLine} className="line"/>

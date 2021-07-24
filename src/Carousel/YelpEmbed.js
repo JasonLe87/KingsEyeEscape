@@ -38,14 +38,14 @@ export default function Yelp() {
             return (
               <div className="Yelp">
                 <div className="YelpImgFrame">
-                  <img src={index + ".jpeg"}/>
+                  <img src={index + ".jpeg"} alt="user photo"/>
                 </div>
                   <h1>{res.name}</h1>
                 <a href="https://m.yelp.com/biz/kings-eye-escape-westminster">
                   <p>{res.post.slice(0, 450) + "..."}</p>
                 </a>
                 <a href="https://m.yelp.com/biz/kings-eye-escape-westminster">
-                  <img style={{width: "100px", height: "60px"}}src="logo-Yelp.jpg" />
+                  <img style={{width: "100px", height: "60px"}}src="logo-Yelp.jpg" alt="Yelp Logo"/>
                 </a>
               </div>
             )

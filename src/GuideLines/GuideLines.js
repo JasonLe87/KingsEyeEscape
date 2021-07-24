@@ -16,7 +16,7 @@ export default function Guidelines() {
         <li>Social Distance between Staff and Patrons</li>
         <li>Stock Hand Sanitizer, Anti-bacterial wipes, Masks</li>
       </div>
-      <img className="logo" src="./CovidGuidelines.jpeg" alt="/" />
+      <img className="logo" src="./CovidGuidelines.jpeg" alt="Covid Guidelines" />
     </div>
   )
 }

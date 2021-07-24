@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 export default function TheHarvest() {
   return (
       <div className="EscapeRoom">
-        <img className="Poster" src="./TheHarvest.jpeg" alt="/"/>
+        <img className="Poster" src="./TheHarvest.jpeg" alt="Loot Wars: The Harvest"/>
         <div className="Description">
           <header>The Harvest</header>
           <p>An emergent disease dubbed "The Illness" has launched the world into chaos. In order to increase your chances of survival, you joined an elite team of looters. You heard rumors of a big score and followed them to a warehouse deep inside Scavenger City.  Come find out what it really means to <strong>SURVIVE!</strong></p>

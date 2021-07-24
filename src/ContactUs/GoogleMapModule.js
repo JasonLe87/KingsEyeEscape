@@ -15,19 +15,6 @@ function Map() {
       <Marker
         position={{lat: 33.76064451391294, lng: -118.01039558468442}}
       />
-      {/* <InfoWindow position={{lat: 33.76064451391294, lng: -118.01039558468442}}>
-        <div style={{width: '200px', height: '100px', fontSize: '1rem', color: "black", textAlign: "center"}}>
-          <div>
-            King's Eye Escape
-          </div>
-          <div>
-            6731 Westminster Blvd. Ste. 105
-          </div>
-          <div>
-            Westminster, CA 92683
-          </div>
-        </div>
-      </InfoWindow > */}
     </GoogleMap>
   )
 }

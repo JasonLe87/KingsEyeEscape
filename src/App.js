@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Switch, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
+import { Helmet } from 'react-helmet'
+
 import Header from './Header/Header.js';
 import EscapeRooms from './EscapeRooms/EscapeRooms.js';
 import Yelp from './Yelp/Yelp.js';
@@ -19,6 +21,16 @@ export default function App() {
     window.scrollTo(0, 0)
   }, [location])
 
+  // useEffect(() => {
+  //   const script = document.createElement("script");
+  //   script.src = "https://www.googletagmanager.com/gtag/js?id=UA-159548226-1";
+  //   script.async = true;
+  //   window.dataLayer = window.dataLayer || [];
+  //   function gtag(){dataLayer.push(arguments);}
+  //   gtag('js', new Date());
+  //   gtag('config', 'UA-159548226-1');
+  // }, [])
+
   const [basketId, setBasketID] = useState(null)
   const [basketItem, setBasketItem] = useState([{
     item: {
@@ -30,8 +42,15 @@ export default function App() {
     total: null
   }])
 
+
+
   return (
     <div className="App">
+      <Helmet>
+        <title></title>
+        <meta name="description" content="Orange County's Newest Spot for Adrenaline-Pumping Fun! Escape rooms and Axe Throwing All-In-One Private Facility! Find yourself fighting to survive in a post-apocalyptic fantasy world." />
+        <meta name="keywords" content="Escape room, Axe Throwing, Ax Throwing, Orange County, OC, Westminster, Escape Rooms, Team Building, Family Fun, Socal" />
+      </Helmet>
       <Header />
       <AnimatePresence exitBeforeEnter inital={false}>
         <Switch location={location} key={location.pathname}>

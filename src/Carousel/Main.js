@@ -69,7 +69,7 @@ export default function Main () {
           <h2 style={{color: "black", textAlign: "center", background: "white", padding: "50px 0 0 0", marginBottom: "0"}}>
           Check Out Why People Love Us
           </h2>
-          <img src={"YelpBackground2.png"} />
+          <img src={"YelpBackground2.png"} alt="Yelp Logo"/>
         </motion.div>
       </div>
     </AnimatePresence>
