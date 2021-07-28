@@ -14,15 +14,13 @@ export default function AxeLounge() {
     document.getElementById("root").scrollIntoView();
   }, []);
 
-  // useEffect(() => {
-  //   const script = document.createElement("script");
-  //   script.src = "https://www.googletagmanager.com/gtag/js?id=UA-159548226-1";
-  //   script.async = true;
-  //   window.dataLayer = window.dataLayer || [];
-  //   function gtag(){dataLayer.push(arguments);}
-  //   gtag('js', new Date());
-  //   gtag('config', 'UA-159548226-1');
-  // }, [])
+  useEffect(() => {
+    gtag('js', new Date());
+    gtag('config', 'UA-159548226-1', {
+      'page_title' : 'AxeLounge',
+      'page_path': '/axe_lounge'
+    });
+  }, [])
 
   return (
     <motion.div className="AxeMain"
@@ -39,6 +37,7 @@ export default function AxeLounge() {
       <Helmet>
         <title>Axe Lounge</title>
         <meta name="description" content="Kick back and rel-AX here at our Ax throwing lounge.  Expert Coaching Available. Safety Lessons and training included." />
+
       </Helmet>
       <div className="AxeLounge">
         <header>Indoor AXE THROWING Lounge</header>

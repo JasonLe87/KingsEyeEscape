@@ -21,15 +21,13 @@ export default function App() {
     window.scrollTo(0, 0)
   }, [location])
 
-  // useEffect(() => {
-  //   const script = document.createElement("script");
-  //   script.src = "https://www.googletagmanager.com/gtag/js?id=UA-159548226-1";
-  //   script.async = true;
-  //   window.dataLayer = window.dataLayer || [];
-  //   function gtag(){dataLayer.push(arguments);}
-  //   gtag('js', new Date());
-  //   gtag('config', 'UA-159548226-1');
-  // }, [])
+  useEffect(() => {
+    gtag('js', new Date());
+    gtag('config', 'UA-159548226-1', {
+      'page_title' : 'homepage',
+      'page_path': '/home'
+    });
+  }, [])
 
   const [basketId, setBasketID] = useState(null)
   const [basketItem, setBasketItem] = useState([{
@@ -50,6 +48,7 @@ export default function App() {
         <title></title>
         <meta name="description" content="Orange County's Newest Spot for Adrenaline-Pumping Fun! Escape rooms and Axe Throwing All-In-One Private Facility! Find yourself fighting to survive in a post-apocalyptic fantasy world." />
         <meta name="keywords" content="Escape room, Axe Throwing, Ax Throwing, Orange County, OC, Westminster, Escape Rooms, Team Building, Family Fun, Socal" />
+
       </Helmet>
       <Header />
       <AnimatePresence exitBeforeEnter inital={false}>

@@ -37,15 +37,13 @@ export default function Main( { basketId, basketItem, setBasketID, setBasketItem
     getCalendar()
   }, [bookingDate])
 
-  // useEffect(() => {
-  //   const script = document.createElement("script");
-  //   script.src = "https://www.googletagmanager.com/gtag/js?id=UA-159548226-1";
-  //   script.async = true;
-  //   window.dataLayer = window.dataLayer || [];
-  //   function gtag(){dataLayer.push(arguments);}
-  //   gtag('js', new Date());
-  //   gtag('config', 'UA-159548226-1');
-  // }, [])
+  useEffect(() => {
+    gtag('js', new Date());
+    gtag('config', 'UA-159548226-1', {
+      'page_title' : 'booking',
+      'page_path': '/book_now'
+    });
+  }, [])
 
   function getCalendar() {
     Axios.post(`/schedule`, {params: {start_date: bookingDate, end_date: bookingDate, "item_ids[0]": 1, "item_ids[1]": 2, "item_ids[2]": 3}, headers: headers})
@@ -89,6 +87,7 @@ export default function Main( { basketId, basketItem, setBasketID, setBasketItem
       <Helmet>
         <title>Schedule</title>
         <meta name="description" content="Check for availabilities to find the best time that works for you" />
+
       </Helmet>
       <Switch location={location} key={location.pathname}>
         <Route path="/book_now/basket">

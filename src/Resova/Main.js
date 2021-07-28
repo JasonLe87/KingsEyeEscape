@@ -11,13 +11,11 @@ export default function Resova() {
   }, [])
 
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://www.googletagmanager.com/gtag/js?id=UA-159548226-1";
-    script.async = true;
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'UA-159548226-1');
+    gtag('config', 'UA-159548226-1', {
+      'page_title' : 'resova',
+      'page_path': '/resova'
+    });
   }, [])
 
   return (

@@ -11,15 +11,13 @@ export default function EscapeRooms() {
     document.getElementById("root").scrollIntoView();
   }, []);
 
-  // useEffect(() => {
-  //   const script = document.createElement("script");
-  //   script.src = "https://www.googletagmanager.com/gtag/js?id=UA-159548226-1";
-  //   script.async = true;
-  //   window.dataLayer = window.dataLayer || [];
-  //   function gtag(){dataLayer.push(arguments);}
-  //   gtag('js', new Date());
-  //   gtag('config', 'UA-159548226-1');
-  // }, [])
+  useEffect(() => {
+    gtag('js', new Date());
+    gtag('config', 'UA-159548226-1', {
+      'page_title' : 'EscapeRoom',
+      'page_path': '/escape_rooms'
+    });
+  }, [])
 
   return (
     <motion.div className="EscapeRooms"
